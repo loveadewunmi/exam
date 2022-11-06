@@ -1,0 +1,282 @@
+.App {
+  min-height: 100%;
+  background: #fff;
+  color: #333;
+}
+
+.navbar {
+  height: 10vh;
+  color: #fff;
+  background: #0D1117;
+}
+.navbar .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo img {
+  width: 40px;
+  filter: invert(1);
+}
+
+.navbar a {
+  text-decoration: none;
+  display: flex;
+  text-transform: uppercase;
+  font-weight: bold;
+  align-items: center;
+  color: #F2AD5F;
+}
+
+@media (max-width: 600px) {
+  .navbar span {
+     display: none;
+  } 
+}
+
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #57606a;
+  border-radius: 7px;
+  width: 300px;
+}
+.searchbar input {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.searchbar input::placeholder {
+  color: #fff;
+}
+.searchbar button {
+  background: none;
+  border: 1px solid #57606a;
+  border-radius: 4px;
+  padding: 1px 8px;
+  color: #57606a;
+}
+
+.profile {
+  margin: 32px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px 20px;
+}
+
+.msg {
+  margin: 24px auto;
+  max-width: 1200px;
+  padding: 0 24px;
+}
+
+.preview {
+  position: relative;
+  border-radius: 10px;
+  background: #0D1117;
+  color: #fff;
+
+}
+
+.preview:hover {
+  transform: rotate(3deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.preview .text {
+  margin: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+}
+
+.preview p {
+  padding: 0;
+  margin: 0;
+}
+
+.preview a, .btn-load-more {
+  text-decoration: none;
+  background: #fff;
+  border: none;
+  color: #0D1117;
+  padding: 3px 10px;
+  height: 24px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.img-div img{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.null {
+  pointer-events: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0D1117;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 2px 2px 20px #333;
+}
+
+.pagination button, .preview button {
+  background: #333;
+  border: none;
+  padding: 3px 10px;
+  margin: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+button.disable {
+  opacity: 0.5;
+}
+
+button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.repository {
+  background: #0D1117;
+  color: #fff;
+}
+
+.banner {
+  max-width: 1440px;
+  height: 200px;
+  background: #f5f5f5;
+  border-top-left-radius: 100px;
+}
+.repo {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0px auto;
+  max-width: 1200px;
+  padding: 0 24px;
+}
+
+.repo h4 {
+  font-size: 30px;
+}
+
+.repo h4 img {
+  display: inline;
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+.repo ul {
+  list-style: none;
+}
+
+.repo-main-list {
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.repo-main-list li div, .repo-main-list-li div{
+  display: flex;
+  align-items: center;
+}
+
+.repo-main-list-li {
+  border-bottom: 1px solid #C8D0D8;
+  margin-bottom: 64px;
+  padding: 10px;
+}
+
+.repo-main-list-li div span {
+  font-size: 12px;
+  border: 1px solid #C8D0D8;
+  border-radius: 25px;
+  padding: 2px 12px;
+  margin-left: 8px;
+}
+
+.repo-main-list a {
+  margin-left: 8px;
+  color: #4785CB;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.repo-main-list img {
+  width: 16px;
+  height: 16px;
+  filter: invert(1);
+}
+
+.repo-sub-list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.repo-sub-list .count {
+  padding: 0 8px;
+}
+
+.repo-sub-list li {
+  margin: 0 8px;
+  padding: 8px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.not-found {
+  margin: 64px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.not-found h1 {
+  font-size: 80px;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.not-found h2 {
+  background: #333;
+  padding: 16px;
+  color: #fff;
+  max-width: 300px;
+  margin: 0;
+  font-size: 40px;
+}
+
+.not-found a {
+  color: #fff;
+  background: #333;
+  padding: 16px;
+}
+
+.not-found img {
+  margin-left: 64px;
+}
